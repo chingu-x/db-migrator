@@ -1,0 +1,20 @@
+{
+  "name": "db-migrator",
+  "version": "1.0.0",
+  "description": "Runs migrations",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://source.developers.google.com/p/tibu-site/r/db-migrator"
+  },
+  "author": "Musaab Elfaqih <musaabelfaki@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "migrate": "sequelize db:migrate --config=/app/config.js --migrations-path=/app/migrations"
+  },
+  "dependencies": {
+    "pg": "^7.8.0",
+    "sequelize": "^4.42.0",
+    "sequelize-cli": "^5.4.0"
+  }
+}
